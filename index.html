@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer Info Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🌾 Farmer Information Portal 🌾</h1>
+    </header>
+    <div class="search-section">
+        <div class="commodity">
+            <label for="district">District</label>
+            <select name="district" id="district">
+                <option value="">Pune City</option>
+            </select>
+        </div>
+        <div class="commodity">
+            <label for="market">Market</label>
+            <select name="market" id="market">
+                <option value="">Baramati</option>
+                <option value="">Bhor</option>
+                <option value="">Bhor</option>
+            </select>
+        </div>
+        <div class="commodity">
+            <label for="dateFrom">From</label>
+            <input type="date" name="dateFrom" id="dateFrom">
+        </div>
+        <div class="commodity">
+            <label for="dateTo">To</label>
+            <input type="date" name="dateTo" id="dateTo">
+        </div>
+        <div class="commodity">
+            <label for="crops">Crop</label>
+            <select name="crops" id="crops">
+                <option value="">Select Crop</option>
+            </select>
+        </div>
+        <div class="commodity">
+            <button>🔍 Search</button>
+        </div>
+    </div>
+    <div class="marquee">
+        <marquee>✨ Top prices of each crop will be displayed here ✨</marquee>
+    </div>
+    <div class="container">
+        <div class="left-section">
+            <div class="box">
+                <h3>📜 Government Schemes</h3>
+                <p>Explore all government schemes related to agriculture.</p>
+            </div>
+        </div>
+        <div class="middle-section">
+            <div class="box">
+                <h3>📈 Last 10 Years Data</h3>
+                <p>View historical data of selected crops.</p>
+            </div>
+            <div class="box">
+                <h3>🔮 Future Predictions</h3>
+                <p>Get price predictions for crops based on past data.</p>
+            </div>
+            <div class="box">
+                <h3>📊 Graphical Representation</h3>
+                <p>Select a graph type to visualize crop data:</p>
+                <select>
+                    <option value="bar">Bar Graph</option>
+                    <option value="line">Line Graph</option>
+                    <option value="pie">Pie Chart</option>
+                    <option value="scatter">Scatter Plot</option>
+                </select>
+            </div>
+        </div>
+        <div class="right-section">
+            <div class="box">
+                <h3>⏳ Crop Duration</h3>
+                <p>Receive suggestions on crop duration for better yield.</p>
+            </div>
+            <div class="box">
+                <h3>🌱 Fertilizers</h3>
+                <p>Recommended fertilizers tailored to your crop.</p>
+            </div>
+            <div class="box">
+                <h3>🛡️ Pesticides</h3>
+                <p>Find the best pesticides for crop protection.</p>
+            </div>
+        </div>
+    </div>
+    <div class="feedback-section">
+        <h2>💬 Share Your Feedback</h2>
+        <textarea id="feedback" placeholder="Enter your feedback here..."></textarea>
+        <button id="submitFeedback">Submit Feedback</button>
+        <p id="feedbackMessage" class="hidden">Thank you for your feedback! 😊</p>
+    </div>
+    <footer>
+        <p>© 2025 Farmer Information Portal | Made with ❤️ for Farmers</p>
+    </footer>
+</body>
+</html>
